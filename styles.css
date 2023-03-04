@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+}
+
+
+body{
+    background: linear-gradient(to right, rgb(240, 92, 245), rgb(226, 33, 59));
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    color: white;
+}
+main{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.todoscontainer{
+    width: 700px;
+    min-height: 500px;
+    background-color: white;
+    border-radius: 5px;
+    padding: 15px;
+}
+
+#todoinput{
+    padding: 10px;
+    font-size: 20px;
+    width: 100%;
+    border: 0;
+    outline: 0;
+    display: block;
+    font-weight: bold;
+    box-shadow: 0px 0px 2px grey;
+}
+
+#todobox{
+    margin-top: 20px;
+    list-style: none;
+}
+
+#todobox li {
+    position: relative;
+    background-color: #2c3e50;
+    color: white;
+    padding: 10px;
+    border-radius: 2px;
+    padding-right: 30px;
+    text-align: justify;
+    margin-top: 10px;
+    user-select: none;
+}
+
+#todobox li i {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+}
+
+i:hover{
+    color: red;
+}
